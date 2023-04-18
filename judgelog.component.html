@@ -1,0 +1,25 @@
+<header>
+    <h1>Judge Panel</h1>
+  </header>
+  
+
+ 
+   <body>
+    
+		<ul>
+			<li><a (click)="viewcase()">View cases</a></li>
+            <app-viewcase *ngIf="viewcase1"></app-viewcase>
+
+			
+			<li><a (click)="casedetails()">View case details</a></li>
+            <app-casedetails *ngIf="casedetails1"></app-casedetails>
+
+            <li><a (click)="updatecasestatus()">Update case status</a></li>
+            <app-updatecasestatus *ngIf="updatecasestatus1"></app-updatecasestatus>
+		</ul>
+   </body>
+    
+    <br><br>
+
+  <router-outlet></router-outlet>
+ 

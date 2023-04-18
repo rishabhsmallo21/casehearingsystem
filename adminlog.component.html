@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Panel</title>
+</head>
+<body>
+	<header>
+		<h1>Admin Panel</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a (click)="showNewCaseForm()">Enter new case</a></li>
+            <app-newcase *ngIf="newCase"></app-newcase>
+
+			
+			<li><a (click)="showChangeHearingForm()">Enter new hearing</a></li>
+            <app-changehearing *ngIf="changeHearing"></app-changehearing>
+		</ul>
+	</nav>
+
+	<router-outlet></router-outlet>
+
+	<footer>
+		<p>&copy; 2023 All Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>

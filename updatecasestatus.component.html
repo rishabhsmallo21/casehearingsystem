@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Update Case Status</h2>
+    <form>
+      <div class="form-group">
+        <label for="case-id">Case ID:</label>
+        <input type="text" [(ngModel)]="caseId" id="case-id" name="caseId" placeholder="Enter Case ID">
+      </div>
+      <div class="form-group">
+        <label for="case-status">Case Status:</label>
+        <input type="text" [(ngModel)]="caseStatus" id="case-status" name="caseStatus" placeholder="Enter Case Status">
+      </div>
+      <button type="submit" (click)="updateCaseStatus()">Update</button>
+    </form>
+  </div>
+  

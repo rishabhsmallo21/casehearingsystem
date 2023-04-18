@@ -1,0 +1,39 @@
+<body>
+    
+ <div>
+    <h2>Change Hearing Time</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="hearingDate">Hearing Date:</label>
+        <input type="date" id="hearingDate" name="hearingDate" [(ngModel)]="hearingDate">
+      </div>
+      <div>
+        <label for="hearingTime">Hearing Time:</label>
+        <input type="time" id="hearingTime" name="hearingTime" [(ngModel)]="hearingTime">
+      </div>
+      <div>
+        <label for="courtroom">Court Room:</label>
+        <input type="string" id="courtroom" name="courtroom" [(ngModel)]="courtroom">
+      </div>
+      <div>
+        <label for="caseid">Case Id:</label>
+        <input type="string" id="caseid" name="caseid" [(ngModel)]="caseid">
+      </div>
+      <div>
+        <button type="submit">Update Hearing</button>
+      </div>
+    </form>
+  </div>
+  
+  <div>
+    <h2>Hearing Details</h2>
+    <div>
+      <p>Date: {{ hearingDate }}</p>
+      <p>Time: {{ hearingTime }}</p>
+      <p>Courtroom: {{ courtroom }}</p>
+      <p>Case Id: {{ caseid }}</p>
+    </div>
+  </div>
+  
+    
+  </body>

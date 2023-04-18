@@ -1,0 +1,65 @@
+.case-details {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .case-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .case-details div {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .case-details label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .case-details span {
+    font-size: 16px;
+  }
+  
+  .case-details p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .case-details div:nth-child(odd) {
+    background-color: #444;
+  }
+  
+  .case-details div:nth-child(even) {
+    background-color: #555;
+  }
+  
+  .case-details span.status {
+    color: #fff;
+    background-color: #f00;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .case-details span.date {
+    color: #ccc;
+    margin-left: 5px;
+  }
+  
+  .case-details span.time {
+    color: #ccc;
+    margin-left: 5px;
+  }
+  
+  .case-details span.room {
+    color: #fff;
+    background-color: #0f0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
